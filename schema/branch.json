@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Branch",
+  "type": "object",
+  "required": [
+    "name",
+    "commit",
+    "protected"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "commit": {
+      "type": "object",
+      "required": [
+        "sha",
+        "url"
+      ],
+      "properties": {
+        "sha": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^.*/repos/.*/commits/.*$"
+        }
+      }
+    },
+    "protected": {
+      "type": "boolean"
+    },
+    "protection": {
+      "type": "object",
+      "default": null,
+      "required": [
+        "enabled",
+        "required_status_checks"
+      ],
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "default": false
+        },
+        "required_status_checks": {
+          "type": "object",
+          "required": [
+            "enforcement_level",
+            "contexts"
+          ],
+          "properties": {
+            "enforcement_level": {
+              "type": "string"
+            },
+            "contexts": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "examples": [
+                  "ci-test",
+                  "linter"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "protection_url": {
+      "type": "string",
+      "pattern": "^.*/repos/.*/branches/.*/protection$"
+    }
+  }
+}

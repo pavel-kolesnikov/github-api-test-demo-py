@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+faker = "*"
+jsonschema = "*"
+parameterized = "*"
+requests = "*"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+test = "python ./test_github_api.py"

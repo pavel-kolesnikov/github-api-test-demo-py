@@ -1,0 +1,503 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "body",
+    "comments_url",
+    "comments",
+    "created_at",
+    "events_url",
+    "html_url",
+    "id",
+    "labels_url",
+    "locked",
+    "node_id",
+    "number",
+    "repository_url",
+    "state",
+    "title",
+    "updated_at",
+    "url",
+    "user"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "integer",
+      "title": "The Id Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "node_id": {
+      "$id": "#/properties/node_id",
+      "type": "string",
+      "title": "The Node_id Schema",
+      "default": "",
+      "examples": [
+        "MDU6SXNzdWUx"
+      ]
+    },
+    "url": {
+      "$id": "#/properties/url",
+      "type": "string",
+      "title": "The Url Schema",
+      "default": "",
+      "examples": [
+        "https://api.github.com/repos/octocat/Hello-World/issues/1347"
+      ]
+    },
+    "repository_url": {
+      "$id": "#/properties/repository_url",
+      "type": "string",
+      "title": "The Repository_url Schema",
+      "default": "",
+      "examples": [
+        "https://api.github.com/repos/octocat/Hello-World"
+      ]
+    },
+    "labels_url": {
+      "$id": "#/properties/labels_url",
+      "type": "string",
+      "title": "The Labels_url Schema",
+      "default": "",
+      "examples": [
+        "https://api.github.com/repos/octocat/Hello-World/issues/1347/labels{/name}"
+      ]
+    },
+    "comments_url": {
+      "$id": "#/properties/comments_url",
+      "type": "string",
+      "title": "The Comments_url Schema",
+      "default": "",
+      "examples": [
+        "https://api.github.com/repos/octocat/Hello-World/issues/1347/comments"
+      ]
+    },
+    "events_url": {
+      "$id": "#/properties/events_url",
+      "type": "string",
+      "title": "The Events_url Schema",
+      "default": "",
+      "examples": [
+        "https://api.github.com/repos/octocat/Hello-World/issues/1347/events"
+      ]
+    },
+    "html_url": {
+      "$id": "#/properties/html_url",
+      "type": "string",
+      "title": "The Html_url Schema",
+      "default": "",
+      "examples": [
+        "https://github.com/octocat/Hello-World/issues/1347"
+      ]
+    },
+    "number": {
+      "$id": "#/properties/number",
+      "type": "integer",
+      "title": "The Number Schema",
+      "default": 0,
+      "examples": [
+        1347
+      ]
+    },
+    "state": {
+      "$id": "#/properties/state",
+      "type": "string",
+      "title": "The State Schema",
+      "default": "",
+      "examples": [
+        "open"
+      ]
+    },
+    "title": {
+      "$id": "#/properties/title",
+      "type": "string",
+      "title": "The Title Schema",
+      "default": "",
+      "examples": [
+        "Found a bug"
+      ]
+    },
+    "body": {
+      "$id": "#/properties/body",
+      "type": "string",
+      "title": "The Body Schema",
+      "default": "",
+      "examples": [
+        "I'm having a problem with this."
+      ]
+    },
+    "user": {
+      "$id": "#/properties/user",
+      "type": "object",
+      "title": "The User Schema",
+      "required": [
+        "login",
+        "id",
+        "node_id",
+        "avatar_url",
+        "gravatar_id",
+        "url",
+        "html_url",
+        "followers_url",
+        "following_url",
+        "gists_url",
+        "starred_url",
+        "subscriptions_url",
+        "organizations_url",
+        "repos_url",
+        "events_url",
+        "received_events_url",
+        "type",
+        "site_admin"
+      ],
+      "properties": {
+        "login": {
+          "$id": "#/properties/user/properties/login",
+          "type": "string",
+          "title": "The Login Schema",
+          "default": "",
+          "examples": [
+            "octocat"
+          ]
+        },
+        "id": {
+          "$id": "#/properties/user/properties/id",
+          "type": "integer",
+          "title": "The Id Schema",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        },
+        "node_id": {
+          "$id": "#/properties/user/properties/node_id",
+          "type": "string",
+          "title": "The Node_id Schema",
+          "default": "",
+          "examples": [
+            "MDQ6VXNlcjE="
+          ]
+        },
+        "avatar_url": {
+          "$id": "#/properties/user/properties/avatar_url",
+          "type": "string",
+          "title": "The Avatar_url Schema",
+          "default": "",
+          "examples": [
+            "https://github.com/images/error/octocat_happy.gif"
+          ]
+        },
+        "gravatar_id": {
+          "$id": "#/properties/user/properties/gravatar_id",
+          "type": "string",
+          "title": "The Gravatar_id Schema",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "url": {
+          "$id": "#/properties/user/properties/url",
+          "type": "string",
+          "title": "The Url Schema",
+          "default": "",
+          "examples": [
+            "https://api.github.com/users/octocat"
+          ]
+        },
+        "html_url": {
+          "$id": "#/properties/user/properties/html_url",
+          "type": "string",
+          "title": "The Html_url Schema",
+          "default": "",
+          "examples": [
+            "https://github.com/octocat"
+          ]
+        },
+        "followers_url": {
+          "$id": "#/properties/user/properties/followers_url",
+          "type": "string",
+          "title": "The Followers_url Schema",
+          "default": "",
+          "examples": [
+            "https://api.github.com/users/octocat/followers"
+          ]
+        },
+        "following_url": {
+          "$id": "#/properties/user/properties/following_url",
+          "type": "string",
+          "title": "The Following_url Schema",
+          "default": "",
+          "examples": [
+            "https://api.github.com/users/octocat/following{/other_user}"
+          ]
+        },
+        "gists_url": {
+          "$id": "#/properties/user/properties/gists_url",
+          "type": "string",
+          "title": "The Gists_url Schema",
+          "default": "",
+          "examples": [
+            "https://api.github.com/users/octocat/gists{/gist_id}"
+          ]
+        },
+        "starred_url": {
+          "$id": "#/properties/user/properties/starred_url",
+          "type": "string",
+          "title": "The Starred_url Schema",
+          "default": "",
+          "examples": [
+            "https://api.github.com/users/octocat/starred{/owner}{/repo}"
+          ]
+        },
+        "subscriptions_url": {
+          "$id": "#/properties/user/properties/subscriptions_url",
+          "type": "string",
+          "title": "The Subscriptions_url Schema",
+          "default": "",
+          "examples": [
+            "https://api.github.com/users/octocat/subscriptions"
+          ]
+        },
+        "organizations_url": {
+          "$id": "#/properties/user/properties/organizations_url",
+          "type": "string",
+          "title": "The Organizations_url Schema",
+          "default": "",
+          "examples": [
+            "https://api.github.com/users/octocat/orgs"
+          ]
+        },
+        "repos_url": {
+          "$id": "#/properties/user/properties/repos_url",
+          "type": "string",
+          "title": "The Repos_url Schema",
+          "default": "",
+          "examples": [
+            "https://api.github.com/users/octocat/repos"
+          ]
+        },
+        "events_url": {
+          "$id": "#/properties/user/properties/events_url",
+          "type": "string",
+          "title": "The Events_url Schema",
+          "default": "",
+          "examples": [
+            "https://api.github.com/users/octocat/events{/privacy}"
+          ]
+        },
+        "received_events_url": {
+          "$id": "#/properties/user/properties/received_events_url",
+          "type": "string",
+          "title": "The Received_events_url Schema",
+          "default": "",
+          "examples": [
+            "https://api.github.com/users/octocat/received_events"
+          ]
+        },
+        "type": {
+          "$id": "#/properties/user/properties/type",
+          "type": "string",
+          "title": "The Type Schema",
+          "default": "",
+          "examples": [
+            "User"
+          ]
+        },
+        "site_admin": {
+          "$id": "#/properties/user/properties/site_admin",
+          "type": "boolean",
+          "title": "The Site_admin Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        }
+      }
+    },
+    "labels": {
+      "$id": "#/properties/labels",
+      "type": "array",
+      "title": "The Labels Schema",
+      "items": {
+        "$id": "#/properties/labels/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "id",
+          "node_id",
+          "url",
+          "name",
+          "description",
+          "color",
+          "default"
+        ],
+        "properties": {
+          "id": {
+            "$id": "#/properties/labels/items/properties/id",
+            "type": "integer",
+            "title": "The Id Schema",
+            "default": 0,
+            "examples": [
+              208045946
+            ]
+          },
+          "node_id": {
+            "$id": "#/properties/labels/items/properties/node_id",
+            "type": "string",
+            "title": "The Node_id Schema",
+            "default": "",
+            "examples": [
+              "MDU6TGFiZWwyMDgwNDU5NDY="
+            ]
+          },
+          "url": {
+            "$id": "#/properties/labels/items/properties/url",
+            "type": "string",
+            "title": "The Url Schema",
+            "default": "",
+            "examples": [
+              "https://api.github.com/repos/octocat/Hello-World/labels/bug"
+            ]
+          },
+          "name": {
+            "$id": "#/properties/labels/items/properties/name",
+            "type": "string",
+            "title": "The Name Schema",
+            "default": "",
+            "examples": [
+              "bug"
+            ]
+          },
+          "description": {
+            "$id": "#/properties/labels/items/properties/description",
+            "type": "string",
+            "title": "The Description Schema",
+            "default": "",
+            "examples": [
+              "Something isn't working"
+            ]
+          },
+          "color": {
+            "$id": "#/properties/labels/items/properties/color",
+            "type": "string",
+            "title": "The Color Schema",
+            "default": "",
+            "examples": [
+              "f29513"
+            ]
+          },
+          "default": {
+            "$id": "#/properties/labels/items/properties/default",
+            "type": "boolean",
+            "title": "The Default Schema",
+            "default": false,
+            "examples": [
+              true
+            ]
+          }
+        }
+      }
+    },
+    "locked": {
+      "$id": "#/properties/locked",
+      "type": "boolean",
+      "title": "The Locked Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "active_lock_reason": {
+      "$id": "#/properties/active_lock_reason",
+      "type": "string",
+      "title": "The Active_lock_reason Schema",
+      "default": "",
+      "examples": [
+        "too heated"
+      ]
+    },
+    "comments": {
+      "$id": "#/properties/comments",
+      "type": "integer",
+      "title": "The Comments Schema",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "pull_request": {
+      "$id": "#/properties/pull_request",
+      "type": "object",
+      "title": "The Pull_request Schema",
+      "required": [
+        "url",
+        "html_url",
+        "diff_url",
+        "patch_url"
+      ],
+      "properties": {
+        "url": {
+          "$id": "#/properties/pull_request/properties/url",
+          "type": "string",
+          "title": "The Url Schema",
+          "default": "",
+          "examples": [
+            "https://api.github.com/repos/octocat/Hello-World/pulls/1347"
+          ]
+        },
+        "html_url": {
+          "$id": "#/properties/pull_request/properties/html_url",
+          "type": "string",
+          "title": "The Html_url Schema",
+          "default": "",
+          "examples": [
+            "https://github.com/octocat/Hello-World/pull/1347"
+          ]
+        },
+        "diff_url": {
+          "$id": "#/properties/pull_request/properties/diff_url",
+          "type": "string",
+          "title": "The Diff_url Schema",
+          "default": "",
+          "examples": [
+            "https://github.com/octocat/Hello-World/pull/1347.diff"
+          ]
+        },
+        "patch_url": {
+          "$id": "#/properties/pull_request/properties/patch_url",
+          "type": "string",
+          "title": "The Patch_url Schema",
+          "default": "",
+          "examples": [
+            "https://github.com/octocat/Hello-World/pull/1347.patch"
+          ]
+        }
+      }
+    },
+    "created_at": {
+      "$id": "#/properties/created_at",
+      "type": "string",
+      "title": "The Created_at Schema",
+      "default": "",
+      "examples": [
+        "2011-04-22T13:33:48Z"
+      ]
+    },
+    "updated_at": {
+      "$id": "#/properties/updated_at",
+      "type": "string",
+      "title": "The Updated_at Schema",
+      "default": "",
+      "examples": [
+        "2011-04-22T13:33:48Z"
+      ]
+    }
+  }
+}
